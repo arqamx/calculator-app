@@ -1,0 +1,131 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600&family=Roboto:wght@400;700&display=swap');
+
+:root {
+    --yellow: #FCB31B;
+    --white: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--yellow);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+	font-family: 'Quicksand', 'Roboto', sans-serif;
+}
+
+.calculator {
+    background-color: #212121;
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: 5px 5px 12px rgba(0,0,0,0.5);
+    display: flex;
+    flex-direction: column;
+    gap: 1.3rem;
+}
+
+.output-container {
+    background-color: #3B3B3B;
+    width: 100%;
+    height: 5.5rem;
+    outline: none;
+    border: none;
+	/* background: transparent; */
+    border-radius: 0.725rem;
+    box-shadow: inset 2px 3px 5px 0px rgba(0,0,0,0.7);
+    padding: 0.65rem;
+    outline: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: right;
+}
+
+.output-container output {
+    /* display: block;
+	border: none;
+	outline: none;
+	background: transparent;
+	width: 100%; */
+}
+
+output#user-input {
+    font-size: 1.325rem;
+	font-weight: 400;
+	color: #60A07F;
+}
+
+output#result {
+    font-size: 1.625rem;
+	font-weight: 600;
+	color: var(--white);
+}
+
+.btn-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.btn-row {
+    display: flex;
+    gap: 0.5rem;
+}
+
+button {
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    border: 0 solid transparent;
+    box-shadow: 4px 5px 5px 0px rgba(0,0,0,0.5);
+    outline: none;
+    font-size: 1.325rem;
+    padding: 1rem 0;
+    font-weight: 700;
+    background-color: #616161;
+    color: #DFDFDF;
+    cursor: pointer;
+    transition: all .15s ease-in-out;
+}
+
+#btn-equal {
+    width: 125px;
+	border-radius: 2.5rem;
+}
+
+#btn-equal:hover {
+    background: limegreen;
+	color: var(--white);
+	transform: translateY(-0.2rem);
+}
+
+button.digit:hover,
+#btn-decimal:hover {
+    background: #bdbdbd;
+	color: #212121;
+	transform: translateY(-0.2rem);
+}
+
+button.operator:hover {
+    background: mediumturquoise;
+	color: #000;
+	transform: translateY(-0.2rem);
+}
+
+#btn-allclear:hover,
+#btn-clear:hover {
+    background: lightcoral;
+	color: #000;
+	transform: translateY(-0.2rem);
+}
+
+button:active {
+    transform: translateY(0rem);
+}
