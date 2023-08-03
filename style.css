@@ -56,14 +56,8 @@ body {
 	width: 100%; */
 }
 
-output#user-input {
-    font-size: 1.325rem;
-	font-weight: 400;
-	color: #60A07F;
-}
-
 output#result {
-    font-size: 1.625rem;
+    font-size: 2.5rem;
 	font-weight: 600;
 	color: var(--white);
 }
@@ -113,14 +107,14 @@ button.digit:hover,
 	transform: translateY(-0.2rem);
 }
 
-button.operator:hover {
+button.operator:hover,
+#btn-signChange:hover {
     background: mediumturquoise;
 	color: #000;
 	transform: translateY(-0.2rem);
 }
 
-#btn-allclear:hover,
-#btn-clear:hover {
+#btn-allclear:hover {
     background: lightcoral;
 	color: #000;
 	transform: translateY(-0.2rem);
